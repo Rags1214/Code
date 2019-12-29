@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="image.png">
+
+    <title>Solivagant</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Solivagant by Evan Riggs</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>SOLIVAGANT</h1>
+        <p>This is where I can put a description of the game, and any other text or image you may want in this area.  Here is what an image would look like in this area. They show the pixel size of each image for reference.</p>
+        <img src="image2.png" alt="Image"/>
+      </div>
+    </div>
+    <!-- First Row of options-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="header">
+            <img src="health.png" alt="Health"/>
+            <h2>Health</h2>
+          </div>
+            <div class="number-input md-number-input">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+            <input class="quantity" min="0" name="quantity" value="100" type="number">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="header">
+          <img src="strength.png" alt="Strength"/>
+          <h2>Strength</h2>
+        </div>
+          <div class="number-input md-number-input">
+          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+          <input class="quantity" min="0" name="quantity" value="100" type="number">
+          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <div class="header">
+        <img src="defence.jpeg" alt="Defense"/>
+        <h2>Defense</h2>
+      </div>
+        <div class="number-input md-number-input">
+        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+        <input class="quantity" min="0" name="quantity" value="100" type="number">
+        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+      </div>
+  </div>
+</div>
+
+<!-- Second Row of options-->
+<div class="row">
+  <div class="col-md-4">
+    <div class="header">
+      <img src="experience.png" alt="Experience"/>
+      <h2>Experience</h2>
+    </div>
+      <div class="number-input md-number-input">
+      <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+      <input class="quantity" min="0" name="quantity" value="100" type="number">
+      <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+    </div>
+</div>
+<div class="col-md-4">
+  <div class="header">
+    <img src="coin.png" alt="Coin"/>
+    <h2>Coins</h2>
+  </div>
+    <div class="number-input md-number-input">
+    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+    <input class="quantity" min="0" name="quantity" value="100" type="number">
+    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+    </div>
+  </div>
+</div>
+<!-- First Check box options-->
+<div class="row">
+  <div class="col-md-4">
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Achievement 1</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Achievement 2</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">Achievement 3</label>
+</div>
+</div>
+
+<!-- Second Check Box option-->
+<div class="col-md-4">
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+    <label class="form-check-label" for="inlineCheckbox1">Achievement 4</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+    <label class="form-check-label" for="inlineCheckbox2">Achievement 5</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+    <label class="form-check-label" for="inlineCheckbox3">Achievement 6</label>
+  </div>
+  </div>
+</div>
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
